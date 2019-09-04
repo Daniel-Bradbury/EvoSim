@@ -5,7 +5,7 @@ boolean sflag=false;
 int cellCap=200000;
 Cell[] cell = new Cell[cellCap];
 void setup() {
-  frameRate(30)
+  frameRate(30);
   println("Loading simulation...");
   for (int i=0; i<cellCap; i++) {
     cell[i] = new Cell();
@@ -77,19 +77,30 @@ void draw() {
     cellCount+=1;
   }
   }
+int ty=10000, by=0, tx=10000, bx=0;
+for (int i=0; i<cellCap; i++) {
+      if (cell[i].live==true) {
+        if(cell[i].x<tx) {tx=cell[i].x;}
+        if(cell[i].y<ty) {ty=cell[i].y;}
+        if(cell[i].x>bx) {bx=cell[i].x;}
+        if(cell[i].y>by) {by=cell[i].y;}
+      }
+    }
+
     frame+=1;
   println(frame+" ticks into the universe... ("+frameRate+" ticks per second)");
   println("-------------------------------------------------------");
   println(cellCount+" cells currently alive.");
   println(deathCount+" cells have died.");
+  println("");
+  println("Area of control: ("+tx+","+ty+") to ("+bx+","+by+")");
+  println("");
 if (cellCount==0) {
     println("Every living organism has died...");
   } else {
   println("");
   }
-  println("");
-  println("");
-  println("");
+  
   println("");
   println("");
   println("");
