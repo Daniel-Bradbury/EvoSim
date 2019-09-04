@@ -79,6 +79,7 @@ void draw() {
   }
     frame+=1;
   println(frame+" ticks into the universe... ("+frameRate+" ticks per second)");
+  println("-------------------------------------------------------");
   println(cellCount+" cells currently alive.");
   println(deathCount+" cells have died.");
 if (cellCount==0) {
@@ -86,7 +87,6 @@ if (cellCount==0) {
   } else {
   println("");
   }
-  println("");
   println("");
   println("");
   println("");
