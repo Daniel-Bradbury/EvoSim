@@ -56,12 +56,12 @@ class Cell {
     this.food=120;
   }
 }
-int[][] world = new int[10000][10000];
+int[][] world = new int[15000][15000];
 void draw() {
   if (sflag==false) {
-    cell[0].cellCreate(5000, 5000);
-    for (int x=0; x<10000; x++) {
-    for (int y=0; y<10000; y++) {
+    cell[0].cellCreate(7500, 7500);
+    for (int x=0; x<15000; x++) {
+    for (int y=0; y<15000; y++) {
       if (random(10)>=9) {
         world[x][y]=1;
       }
@@ -77,7 +77,7 @@ void draw() {
     cellCount+=1;
   }
   }
-int ty=10000, by=0, tx=10000, bx=0;
+int ty=15000, by=0, tx=15000, bx=0;
 for (int i=0; i<cellCap; i++) {
       if (cell[i].live==true) {
         if(cell[i].x<tx) {tx=cell[i].x;}
