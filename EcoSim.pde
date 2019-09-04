@@ -1,5 +1,5 @@
 int cellCount=0;
-
+int deathCount=0;
 int frame;
 boolean sflag=false;
 int cellCap=200000;
@@ -31,6 +31,7 @@ class Cell {
     // Cell cycle
     if(food<=0) {
       if(live==true) {
+      deathCount+=1;
       live=false;
     }
   }
@@ -78,12 +79,13 @@ void draw() {
   }
     frame+=1;
   println(frame+" ticks into the universe... ("+frameRate+" ticks per second)");
-  println(cellCount+" cells currently alive");
+  println(cellCount+" cells currently alive.");
+  println(deathCount+" cells have died.");
 if (cellCount==0) {
     println("Every living organism has died...");
+  } else {
+  println("");
   }
-  println("");
-  println("");
   println("");
   println("");
   println("");
