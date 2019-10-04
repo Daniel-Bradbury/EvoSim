@@ -93,7 +93,11 @@ for (int i=0; i<cellCap; i++) {
   println(cellCount+" cells currently alive.");
   println(deathCount+" cells have died.");
   println("");
+  if (cellCount!=0) {
   println("Area of control: ("+tx+","+ty+") to ("+bx+","+by+")");
+  } else {
+  println("");
+  }
   println("");
 if (cellCount==0) {
     println("Every living organism has died...");
