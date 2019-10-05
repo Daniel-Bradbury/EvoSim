@@ -2,6 +2,7 @@ int cellCount=0;
 int deathCount=0;
 int frame;
 boolean sflag=false;
+boolean end=false;
 int cellCap=200000;
 Cell[] cell = new Cell[cellCap];
 void setup() {
@@ -100,7 +101,11 @@ for (int i=0; i<cellCap; i++) {
   }
   println("");
 if (cellCount==0) {
-    println("Every living organism has died...");
+    if (!(end)) {
+	endframe=frame;
+	end=true;
+	}
+    println("Every living organism died by tick "+endframe+"...");
   } else {
   println("");
   }
