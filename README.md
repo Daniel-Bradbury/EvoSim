@@ -7,7 +7,7 @@ Go [here](https://www.ruby-lang.org/en/downloads/) to download the most recent v
 
 Then in the folder you extraced the repo into:
 
-`gem install bundle`
+`gem install bundler:1.17.3`
 
 `bundle install`
 
