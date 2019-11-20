@@ -4,6 +4,7 @@ int frame;
 boolean sflag=false;
 boolean end=false;
 int cellCap=200000;
+int endframe;
 Cell[] cell = new Cell[cellCap];
 void setup() {
   frameRate(30);
