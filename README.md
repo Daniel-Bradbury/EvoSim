@@ -1,4 +1,6 @@
 # EcoSim
+[![Run on Repl.it](https://repl.it/badge/github/DanielBradbury1/EcoSim)](https://repl.it/@DanielBradbury1/EcoSim)
+
 A small ecosystem simulator that runs in a web browser.
 
 To install, follow these instructions:
