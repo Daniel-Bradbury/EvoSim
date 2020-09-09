@@ -1,5 +1,5 @@
 # EcoSim
-[![Run on Repl.it](https://repl.it/badge/github/DanielBradbury1/EcoSim)](https://repl.it/@DanielBradbury1/EcoSim)
+[![Run on Repl.it](https://repl.it/badge/github/DanielBradbury1/EcoSim)](https://EcoSim--danielbradbury1.repl.co)
 
 A small ecosystem simulator that runs in a web browser.
 
